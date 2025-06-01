@@ -1,4 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-light: #000000; 
+    --background-color-light: #ffffff; 
+    
+    --text-color-dark: #ffffff; 
+    --background-color-dark: #1e1e1e; 
+}
+
 body {
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
+    color: var(--text-color-light);
+    background-color: var(--background-color-light);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--text-color-dark);
+        background-color: var(--background-color-dark);
+    }
 }
